@@ -1,0 +1,139 @@
+Accumulation/Distribution: 'ACCD@tv-basicstudies'
+ADR: 'studyADR@tv-basicstudies'
+Aroon: 'AROON@tv-basicstudies'
+Average True Range: 'ATR@tv-basicstudies'
+Awesome Oscillator: 'AwesomeOscillator@tv-basicstudies'
+Bollinger Bands: 'BB@tv-basicstudies'
+Bollinger Bands %B: 'BollingerBandsR@tv-basicstudies'
+Bollinger Bands Width: 'BollingerBandsWidth@tv-basicstudies'
+Chaikin Money Flow: 'CMF@tv-basicstudies'
+Chaikin Oscillator: 'ChaikinOscillator@tv-basicstudies'
+Chande Momentum Oscillator: 'chandeMO@tv-basicstudies'
+Choppiness Index: 'ChoppinessIndex@tv-basicstudies'
+Commodity Channel Index: 'CCI@tv-basicstudies'
+ConnorsRSI: 'CRSI@tv-basicstudies'
+Correlation Coefficient: 'CorrelationCoefficient@tv-basicstudies'
+Detrended Price Oscillator: 'DetrendedPriceOscillator@tv-basicstudies'
+Directional Movement: 'DM@tv-basicstudies'
+Donchian Channels: 'DONCH@tv-basicstudies'
+Double EMA: 'DoubleEMA@tv-basicstudies'
+Ease Of Movement: 'EaseOfMovement@tv-basicstudies'
+Elder's Force Index: 'EFI@tv-basicstudies'
+Elliott Wave: 'ElliottWave@tv-basicstudies'
+Envelope: 'ENV@tv-basicstudies'
+Fisher Transform: 'FisherTransform@tv-basicstudies'
+Historical Volatility: 'HV@tv-basicstudies'
+Hull Moving Average: 'hullMA@tv-basicstudies'
+Ichimoku Cloud: 'IchimokuCloud@tv-basicstudies'
+Keltner Channels: 'KLTNR@tv-basicstudies'
+Know Sure Thing: 'KST@tv-basicstudies'
+Linear Regression: 'LinearRegression@tv-basicstudies'
+MACD: 'MACD@tv-basicstudies'
+Momentum: 'MOM@tv-basicstudies'
+Money Flow: 'MF@tv-basicstudies'
+Moon Phases: 'MoonPhases@tv-basicstudies'
+Moving Average: 'MASimple@tv-basicstudies'
+Moving Average Exponentional: 'MAExp@tv-basicstudies'
+Moving Average Weighted: 'MAWeighted@tv-basicstudies'
+On Balance Volume: 'OBV@tv-basicstudies'
+Parabolic SAR: 'PSAR@tv-basicstudies'
+Pivot Points High Low: 'PivotPointsHighLow@tv-basicstudies'
+Pivot Points Standard: 'PivotPointsStandard@tv-basicstudies'
+Price Oscillator: 'PriceOsc@tv-basicstudies'
+Price Volume Trend: 'PriceVolumeTrend@tv-basicstudies'
+Rate Of Change: 'ROC@tv-basicstudies'
+Relative Strength Index: 'RSI@tv-basicstudies'
+Relative Vigor Index: 'VigorIndex@tv-basicstudies'
+Relative Volatility Index: 'VolatilityIndex@tv-basicstudies'
+SMI Ergodic Indicator: 'SMIErgodicIndicator@tv-basicstudies'
+SMI Ergodic Oscillator: 'SMIErgodicOscillator@tv-basicstudies'
+Stochastic: 'Stochastic@tv-basicstudies'
+Stochastic RSI: 'StochasticRSI@tv-basicstudies'
+Triple EMA: 'TripleEMA@tv-basicstudies'
+TRIX: 'Trix@tv-basicstudies'
+Ultimate Oscillator: 'UltimateOsc@tv-basicstudies'
+Volatility Stop: 'VSTOP@tv-basicstudies'
+Volume: 'Volume@tv-basicstudies'
+VWAP: 'VWAP@tv-basicstudies'
+VWMA: 'MAVolumeWeighted@tv-basicstudies'
+Williams %R: 'WilliamR@tv-basicstudies'
+Williams Alligator: 'WilliamsAlligator@tv-basicstudies'
+Williams Fractal: 'WilliamsFractal@tv-basicstudies'
+Zig Zag: 'ZigZag@tv-basicstudies'
+
+
+"studies_overrides": {
+	"relative strength index.rsi.color": "#2196f3",
+	"relative strength index.upper band.color": "#2100f5",
+	"relative strength index.lower band.color": "#2100f5",
+
+	"relative strength index.upper band.value": 80,
+	"relative strength index.lower band.value": 20,
+},
+"studies": [
+	"RSI@tv-basicstudies"
+]
+
+
+new Tradingview.widget({
+    overrides: {
+       "paneProperties.background": "#ffffff"
+    },
+    studies_overrides: {
+       "volume.volume.color.0": "#00FFFF",
+    }
+
+})
+
+var studies = [
+    {
+      id: "IchimokuCloud@tv-basicstudies",
+      version: 2.0
+    },
+	
+    {
+      id: "BB@tv-basicstudies",
+      inputs: {
+        length: 25
+      },
+    },
+	
+    {
+      id: "MASimple@tv-basicstudies",
+      inputs: {
+        length: 200
+      }
+    },
+	
+    {
+      id: "MASimple@tv-basicstudies",
+      inputs: {
+        length: 100
+      }
+    },
+	
+    {
+      id: "MASimple@tv-basicstudies",
+      inputs: {
+        length: 50
+      }
+    },
+	
+    {
+      id: "MASimple@tv-basicstudies",
+      inputs: {
+        length: 9
+      }
+    },
+	
+    {
+      id: "RSI@tv-basicstudies",
+    },
+	
+    {
+      id: "RSI@tv-basicstudies",
+      inputs: {
+        length: 4
+      }
+    }
+  ];
